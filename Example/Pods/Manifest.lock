@@ -1,0 +1,19 @@
+PODS:
+  - LGBLog (0.1.8)
+  - ZANaviBar (0.1.0)
+
+DEPENDENCIES:
+  - LGBLog
+  - ZANaviBar (from `../`)
+
+EXTERNAL SOURCES:
+  ZANaviBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LGBLog: d33e33c7fbeb56cf4ce408d390f843d1a5d90803
+  ZANaviBar: 2c85cad934f12e62eeae641ed1d6f209be364c24
+
+PODFILE CHECKSUM: de5e6546019c0dcaed97a9fd44675081373d94dc
+
+COCOAPODS: 1.4.0

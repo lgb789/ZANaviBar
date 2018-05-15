@@ -2,6 +2,9 @@ use_frameworks!
 
 target 'ZANaviBar_Example' do
   pod 'ZANaviBar', :path => '../'
+  
+  source 'https://github.com/lgb789/LGBSpecs.git'
+  pod 'LGBLog'
 
   target 'ZANaviBar_Tests' do
     inherit! :search_paths

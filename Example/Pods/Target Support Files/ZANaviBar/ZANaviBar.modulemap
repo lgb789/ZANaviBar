@@ -1,0 +1,6 @@
+framework module ZANaviBar {
+  umbrella header "ZANaviBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

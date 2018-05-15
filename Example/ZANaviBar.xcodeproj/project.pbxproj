@@ -20,8 +20,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B8C7869320AACC9900F59737 /* Example02.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7868A20AACC9700F59737 /* Example02.m */; };
+		B8C7869420AACC9900F59737 /* Example01.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7868B20AACC9800F59737 /* Example01.m */; };
+		B8C7869520AACC9900F59737 /* Example05.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7868C20AACC9800F59737 /* Example05.m */; };
+		B8C7869620AACC9900F59737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7868D20AACC9800F59737 /* ViewController.m */; };
+		B8C7869720AACC9900F59737 /* Example04.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7868F20AACC9800F59737 /* Example04.m */; };
+		B8C7869820AACC9900F59737 /* Example03.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7869120AACC9900F59737 /* Example03.m */; };
+		B8C7869D20AACE8D00F59737 /* ZAHeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C7869C20AACE8D00F59737 /* ZAHeaderImageView.m */; };
 		F40939923363BE95339080CC /* Pods_ZANaviBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BF323EC43FA6CD0D1ECD7E /* Pods_ZANaviBar_Example.framework */; };
 		FA42962DFF5DF4B98A7BC0F3 /* Pods_ZANaviBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE8D849171E96EB2A44B5A6 /* Pods_ZANaviBar_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -56,16 +61,29 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97BF323EC43FA6CD0D1ECD7E /* Pods_ZANaviBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZANaviBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F39B92EBB96F98F69223A3 /* Pods-ZANaviBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZANaviBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZANaviBar_Example/Pods-ZANaviBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAE8D849171E96EB2A44B5A6 /* Pods_ZANaviBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZANaviBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2803F3B288EABCD0CB8699 /* Pods-ZANaviBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZANaviBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZANaviBar_Tests/Pods-ZANaviBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B1ADAAE2E7DAC5008D151353 /* ZANaviBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZANaviBar.podspec; path = ../ZANaviBar.podspec; sourceTree = "<group>"; };
+		B1ADAAE2E7DAC5008D151353 /* ZANaviBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZANaviBar.podspec; path = ../ZANaviBar.podspec; sourceTree = "<group>"; };
 		B4B2BD0D2A4931BECFF14A0A /* Pods-ZANaviBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZANaviBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZANaviBar_Example/Pods-ZANaviBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E46F7E6BD2AED92B177AFF7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F0BAF2EB50E24E4EFABA3789 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B8C7868720AACC9700F59737 /* Example02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example02.h; sourceTree = "<group>"; };
+		B8C7868820AACC9700F59737 /* Example04.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example04.h; sourceTree = "<group>"; };
+		B8C7868920AACC9700F59737 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B8C7868A20AACC9700F59737 /* Example02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example02.m; sourceTree = "<group>"; };
+		B8C7868B20AACC9800F59737 /* Example01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example01.m; sourceTree = "<group>"; };
+		B8C7868C20AACC9800F59737 /* Example05.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example05.m; sourceTree = "<group>"; };
+		B8C7868D20AACC9800F59737 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8C7868E20AACC9800F59737 /* Example01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example01.h; sourceTree = "<group>"; };
+		B8C7868F20AACC9800F59737 /* Example04.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example04.m; sourceTree = "<group>"; };
+		B8C7869020AACC9800F59737 /* Example05.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example05.h; sourceTree = "<group>"; };
+		B8C7869120AACC9900F59737 /* Example03.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example03.m; sourceTree = "<group>"; };
+		B8C7869220AACC9900F59737 /* Example03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example03.h; sourceTree = "<group>"; };
+		B8C7869A20AACE1400F59737 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		B8C7869B20AACE8D00F59737 /* ZAHeaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAHeaderImageView.h; sourceTree = "<group>"; };
+		B8C7869C20AACE8D00F59737 /* ZAHeaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAHeaderImageView.m; sourceTree = "<group>"; };
+		E46F7E6BD2AED92B177AFF7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F0BAF2EB50E24E4EFABA3789 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FED6019180E0530A364BD762 /* Pods-ZANaviBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZANaviBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZANaviBar_Tests/Pods-ZANaviBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,14 +161,27 @@
 		6003F593195388D20070C39A /* Example for ZANaviBar */ = {
 			isa = PBXGroup;
 			children = (
+				B8C7869B20AACE8D00F59737 /* ZAHeaderImageView.h */,
+				B8C7869C20AACE8D00F59737 /* ZAHeaderImageView.m */,
 				6003F59C195388D20070C39A /* ZAAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZAAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZAViewController.h */,
 				6003F5A6195388D20070C39A /* ZAViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				B8C7868E20AACC9800F59737 /* Example01.h */,
+				B8C7868B20AACC9800F59737 /* Example01.m */,
+				B8C7868720AACC9700F59737 /* Example02.h */,
+				B8C7868A20AACC9700F59737 /* Example02.m */,
+				B8C7869220AACC9900F59737 /* Example03.h */,
+				B8C7869120AACC9900F59737 /* Example03.m */,
+				B8C7868820AACC9700F59737 /* Example04.h */,
+				B8C7868F20AACC9800F59737 /* Example04.m */,
+				B8C7869020AACC9800F59737 /* Example05.h */,
+				B8C7868C20AACC9800F59737 /* Example05.m */,
+				B8C7868920AACC9700F59737 /* ViewController.h */,
+				B8C7868D20AACC9800F59737 /* ViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				B8C7869A20AACE1400F59737 /* Header.h */,
 			);
 			name = "Example for ZANaviBar";
 			path = ZANaviBar;
@@ -250,6 +281,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lgb789;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7CKU2V5F6W;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,8 +313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -403,8 +435,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C7869D20AACE8D00F59737 /* ZAHeaderImageView.m in Sources */,
+				B8C7869620AACC9900F59737 /* ViewController.m in Sources */,
+				B8C7869420AACC9900F59737 /* Example01.m in Sources */,
+				B8C7869320AACC9900F59737 /* Example02.m in Sources */,
 				6003F59E195388D20070C39A /* ZAAppDelegate.m in Sources */,
+				B8C7869520AACC9900F59737 /* Example05.m in Sources */,
 				6003F5A7195388D20070C39A /* ZAViewController.m in Sources */,
+				B8C7869820AACC9900F59737 /* Example03.m in Sources */,
+				B8C7869720AACC9900F59737 /* Example04.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,14 +481,6 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,12 +564,15 @@
 			baseConfigurationReference = B4B2BD0D2A4931BECFF14A0A /* Pods-ZANaviBar_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZANaviBar/ZANaviBar-Prefix.pch";
 				INFOPLIST_FILE = "ZANaviBar/ZANaviBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +582,15 @@
 			baseConfigurationReference = A7F39B92EBB96F98F69223A3 /* Pods-ZANaviBar_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZANaviBar/ZANaviBar-Prefix.pch";
 				INFOPLIST_FILE = "ZANaviBar/ZANaviBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
