@@ -51,7 +51,7 @@
 {
     [super viewWillAppear:animated];
     ZA_logString(@"will appear...e");
-    [self.navigationController.za_bar setBackgroundHidden:YES];
+    [self.navigationController.za_bar setNaviBarHidden:YES];
 //    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [[UIColor whiteColor] colorWithAlphaComponent:0]};
 //    [self.navigationController.za_bar setBarTitleAlpha:0];
     
@@ -64,7 +64,7 @@
     [super viewWillDisappear:animated];
     
     ZA_logString(@"disappear...");
-    [self.navigationController.za_bar setBackgroundHidden:NO];
+    [self.navigationController.za_bar setNaviBarHidden:NO];
 //    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [[UIColor whiteColor] colorWithAlphaComponent:1.0]};
 //    [self.navigationController.za_bar setBarTitleAlpha:1];
     

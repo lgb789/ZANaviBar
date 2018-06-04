@@ -17,7 +17,7 @@
 
 -(void)setBarBackgroundImage:(UIImage *)barBackgroundImage;
 
--(void)setBackgroundHidden:(BOOL)backgroundHidden;
+-(void)setNaviBarHidden:(BOOL)naviBarHidden;
 
 -(void)setBackgroundAlpha:(CGFloat)backgroundAlpha;
 
@@ -27,7 +27,7 @@
 
 -(void)setBarShadowImageColor:(UIColor *)barShadowImageColor;
 
--(void)setBarShadowImageAlpha:(CGFloat)barShadowImageAlpha;
+//-(void)setBarShadowImageAlpha:(CGFloat)barShadowImageAlpha;
 
 @end
 

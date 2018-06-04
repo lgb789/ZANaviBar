@@ -71,11 +71,12 @@
     self.backgroundView.image = image;
 }
 
--(void)setBackgroundHidden:(BOOL)backgroundHidden
+-(void)setNaviBarHidden:(BOOL)naviBarHidden
 {
 
     [self transitionViewController:self.navigationController.topViewController block:^{
-        self.backgroundView.alpha = backgroundHidden ? 0 : 1;
+        self.backgroundView.alpha = naviBarHidden ? 0 : 1;
+        self.separatorView.alpha = naviBarHidden ? 0 : 1;
     }];
 }
 
@@ -84,6 +85,7 @@
     CGFloat alpha = MIN(backgroundAlpha, 1.0);
     alpha = MAX(0, alpha);
     self.backgroundView.alpha = alpha;
+    self.separatorView.alpha = alpha;
 }
 
 -(void)setBarTitleAlpha:(CGFloat)barTitleAlpha
@@ -114,10 +116,10 @@
     self.separatorView.backgroundColor = barShadowImageColor;
 }
 
--(void)setBarShadowImageAlpha:(CGFloat)barShadowImageAlpha
-{
-    self.separatorView.alpha = barShadowImageAlpha;
-}
+//-(void)setBarShadowImageAlpha:(CGFloat)barShadowImageAlpha
+//{
+//    self.separatorView.alpha = barShadowImageAlpha;
+//}
 
 #pragma mark ------------------------------------------------- 私有方法 -------------------------------------------------
 -(void)transitionViewController:(UIViewController *)viewController block:(void(^)(void))block
