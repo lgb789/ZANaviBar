@@ -109,6 +109,8 @@
 -(void)setHideBackButton:(BOOL)hideBackButton
 {
     _hideBackButton = hideBackButton;
+    
+    self.navigationController.topViewController.navigationItem.hidesBackButton = hideBackButton;
 }
 
 -(void)setBarShadowImageColor:(UIColor *)barShadowImageColor
@@ -143,10 +145,10 @@
 -(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (navigationController.viewControllers.count >= 2) {
-
-        viewController.navigationItem.leftBarButtonItem = self.hideBackButton ? nil : self.backButtonItem;
-        viewController.navigationItem.hidesBackButton = self.hideBackButton;
-        self.hideBackButton = NO;
+        
+        if (!self.hideBackButton) {
+            viewController.navigationItem.leftBarButtonItem = self.backButtonItem;
+        }
     }
     
 }

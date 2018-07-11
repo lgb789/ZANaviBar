@@ -23,6 +23,7 @@
   
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.za_bar.hideBackButton = YES;
+    ZA_logBool(self.navigationItem.hidesBackButton);
     [self.navigationController.za_bar setBarShadowImageColor:[UIColor blueColor]];
 }
 
@@ -35,6 +36,8 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    self.navigationController.za_bar.hideBackButton = NO;
     
 }
 
